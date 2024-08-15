@@ -1,0 +1,58 @@
+/* Importing Google Fonts and Font Awesome */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centering the content */
+  align-items: center;
+  padding: 1rem;
+  background-color: #343a40; /* Darker background for a professional look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Roboto', sans-serif; /* Applying Google Font */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White color for contrast */
+  margin-right: auto; /* Pushes logo to the left */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Increased gap for spacing */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff; /* White color for text */
+  transition: color 0.3s, text-shadow 0.3s; /* Smooth transitions */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+.nav-links li a:hover {
+  color: #ff6f00; /* Orange color on hover */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Dashboard Link Styling */
+.dashboard {
+  font-weight: bold;
+  color: #ff6f00; /* Highlight color for special links */
+}

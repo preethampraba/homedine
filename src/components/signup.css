@@ -1,0 +1,131 @@
+/* Background and Container */
+.signup-page-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Softer gradient */
+}
+
+.signup-container {
+  background: #ffffff;
+  padding: 40px; /* Increased padding for a more spacious look */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  width: 360px; /* Adjusted width for a more compact design */
+  text-align: center;
+  animation: slideIn 0.6s ease-out; /* Slightly longer animation */
+}
+
+/* Header and Title */
+.signup-header {
+  margin-bottom: 24px; /* Increased margin for better spacing */
+}
+
+.signup-title {
+  font-size: 26px; /* Larger font size for better prominence */
+  font-weight: 600; /* Slightly lighter font weight */
+  color: #333;
+}
+
+.header-underline {
+  width: 80px; /* Wider underline for a stronger visual impact */
+  height: 6px; /* Slightly thicker underline */
+  background: linear-gradient(90deg, #007bff, #00d2d3);
+  margin: 12px auto; /* Increased margin for better spacing */
+  border-radius: 3px; /* Slightly rounded corners */
+}
+
+/* Input Fields */
+.signup-inputs .input-field {
+  margin-bottom: 24px; /* Increased margin for better spacing */
+}
+
+.signup-inputs .input-field input {
+  width: calc(100% - 20px); /* Adjusted width for margins */
+  margin: 0 auto; /* Center the input */
+  padding: 12px; /* Increased padding for better touch target */
+  border: 1px solid #ddd; /* Softer border color */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1); /* Enhanced inner shadow */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-inputs .input-field input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4); /* Softer focus shadow */
+  outline: none;
+}
+
+/* Submit Button */
+.signup-submit-container {
+  margin-top: 24px; /* Increased margin for better spacing */
+}
+
+.signup-submit-button {
+  width: 100%;
+  padding: 12px; /* Increased padding for a more substantial button */
+  background: linear-gradient(90deg, #007bff, #00d2d3);
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Slightly more rounded corners */
+  font-size: 16px;
+  font-weight: 600; /* Bold text for better readability */
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.signup-submit-button:hover {
+  background: linear-gradient(90deg, #0056b3, #00a3a4);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d; /* Softer red for better readability */
+  font-size: 14px;
+  margin-bottom: 12px; /* Increased margin for better spacing */
+}
+
+/* Footer and Links */
+.signup-already {
+  margin-top: 24px; /* Increased margin for better spacing */
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-login {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600; /* Bold text for better visibility */
+}
+
+.signup-footer {
+  margin-top: 24px; /* Increased margin for better spacing */
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-footer-separator {
+  margin: 0 12px; /* Increased margin for better spacing */
+  color: #ccc;
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-40px); /* Moved further left for a more pronounced effect */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
